@@ -36,4 +36,5 @@
 
 ---
 Для сканирования QR-code
-![Image alt](https://github.com/nsvetlakov/recharge_city/edit/main/qr-code.png)
+<img src="https://github.com/nsvetlakov/recharge_city/edit/main/qr-code.png" height="200" width="200"/>
+
