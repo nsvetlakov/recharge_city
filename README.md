@@ -35,7 +35,8 @@
 - Отображает **ссылку на мобильное приложение**.
 
 ---
-Для сканирования QR-code
-![](https://raw.githubusercontent.com/nsvetlakov/recharge_city/refs/heads/main/qr-code.png)
+
+### Для сканирования QR-code
+
 <img src="https://raw.githubusercontent.com/nsvetlakov/recharge_city/refs/heads/main/qr-code.png" height="200" width="200"/>
 
