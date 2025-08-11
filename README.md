@@ -35,3 +35,5 @@
 - Отображает **ссылку на мобильное приложение**.
 
 ---
+Для сканирования QR-code
+![Image alt](https://github.com/nsvetlakov/recharge_city/edit/main/qr-code.png)
