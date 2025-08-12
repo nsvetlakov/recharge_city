@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// Общий скаффолд с градиентом (первая версия).
+/// Общий скаффолд
 class AppScaffold extends StatelessWidget {
-  /// Общий скаффолд с градиентом (первая версия).
+  /// Общий скаффолд
   const AppScaffold({
     super.key,
     required this.body,

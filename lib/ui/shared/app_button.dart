@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:test_app_for_red/core/utils.dart';
 import 'package:test_app_for_red/ui/shared/text.dart';
 
+/// Общий виджет кнопки
 class AppButton extends StatelessWidget {
+  /// Общий виджет кнопки
   const AppButton({super.key, this.width, this.onTap, required this.text});
 
   final double? width;

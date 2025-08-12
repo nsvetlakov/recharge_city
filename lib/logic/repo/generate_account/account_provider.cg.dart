@@ -6,8 +6,7 @@ import 'package:test_app_for_red/domain/account/account.cg.dart';
 
 part 'gen/account_provider.cg.g.dart';
 
-/// Сервис модели аккаунта для получения/сохранения данных о пользователе
-/// в локальном хранилище
+/// Сервис модели аккаунта
 @Riverpod(keepAlive: true)
 class AccountService extends _$AccountService {
   @override

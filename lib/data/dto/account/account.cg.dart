@@ -4,10 +4,10 @@ import 'package:test_app_for_red/domain/account/account.cg.dart';
 part 'gen/account.cg.f.dart';
 part 'gen/account.cg.g.dart';
 
-/// DTO
+/// DTO аккаунта
 @freezed
 sealed class AccountDto with _$AccountDto {
-  /// DTO
+  /// DTO аккаунта
   const factory AccountDto({
     @JsonKey(name: 'rechargeUserEntity') RechargeUserDto? rechargeUserEntity,
     @JsonKey(name: 'accessJwt') String? accessJwt,

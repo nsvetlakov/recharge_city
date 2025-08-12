@@ -15,7 +15,9 @@ import 'package:test_app_for_red/ui/shared/text.dart';
 
 part 'widgets/_add_card.dart';
 
+/// Экрна подписки
 class SubscribeScreen extends ConsumerStatefulWidget {
+  /// Экрна подписки
   const SubscribeScreen({super.key});
 
   @override
@@ -26,6 +28,7 @@ class _SubscribeScreenState extends ConsumerState<SubscribeScreen> {
   late final Future<PaymentConfiguration> _googlePayConfigFuture;
   late final Future<PaymentConfiguration> _applePayConfigFuture;
 
+  // тест оплаты
   static const _paymentItems = [
     PaymentItem(
       label: 'Total',
@@ -44,12 +47,12 @@ class _SubscribeScreenState extends ConsumerState<SubscribeScreen> {
     );
   }
 
-  ///
+  /// метод после успешной оплаты
   void onGooglePayResult(Map<String, dynamic> paymentResult) {
     appRouter.push(ScreenPaths.paymentScreen);
   }
 
-  ///
+  /// метод после успешной оплаты
   void onApplePayResult(Map<String, dynamic> paymentResult) {
     appRouter.push(ScreenPaths.paymentScreen);
   }

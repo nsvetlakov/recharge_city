@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:test_app_for_red/ui/shared/app_alert.dart';
 import 'package:test_app_for_red/ui/shared/text/text_theme_model.dart';
 
+/// Виджет обращения в поддержку
 class AppContactSupport extends StatelessWidget {
+  /// Виджет обращения в поддержку
   const AppContactSupport({super.key});
 
   @override

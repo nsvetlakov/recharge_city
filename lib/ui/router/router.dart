@@ -12,9 +12,13 @@ final class ScreenPaths {
   /// Домой
   static const String main = '/';
 
-  /// Экран Токенов
+  /// Экран Qr-Code
   static const String qrCode = '/qr-code';
+
+  /// Экран оплаты
   static const String paymentScreen = '/payment-screen';
+
+  /// Экран подписки
   static const String subscribeScreen = '/subscribe-screen';
 }
 

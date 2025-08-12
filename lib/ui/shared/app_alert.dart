@@ -3,6 +3,7 @@ import 'package:test_app_for_red/core/ext.dart';
 import 'package:test_app_for_red/ui/shared/app_button.dart';
 import 'package:test_app_for_red/ui/shared/text.dart';
 
+/// вызов уведомления
 void appAlert(BuildContext context, {required String text}) {
   showDialog(
     context: context,
@@ -17,6 +18,7 @@ void appAlert(BuildContext context, {required String text}) {
   );
 }
 
+/// вызов уведомления с кнопкой
 void appAlertBtn(
   BuildContext context, {
   required String text,

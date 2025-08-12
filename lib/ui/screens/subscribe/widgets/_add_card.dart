@@ -1,5 +1,6 @@
 part of '../subcribe_screen.dart';
 
+/// Виджет ui добавления карты
 class _AddCard extends StatelessWidget {
   const _AddCard({required this.onTapAddCard});
 

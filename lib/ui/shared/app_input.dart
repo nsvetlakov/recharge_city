@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_for_red/ui/shared/text/text_theme_model.dart';
 
+// Общий виджет inputs
 class AppInput extends StatelessWidget {
   const AppInput({super.key, this.hintText, this.controller});
 

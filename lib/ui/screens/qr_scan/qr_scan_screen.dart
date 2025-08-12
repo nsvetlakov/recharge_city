@@ -22,9 +22,11 @@ class QrCodeScanScreen extends ConsumerStatefulWidget {
 }
 
 class _QrCodeScanScreenState extends ConsumerState<QrCodeScanScreen> {
+  // контроллер сканера
   late MobileScannerController scanController;
-
+  // локальное хранилище
   final local = SharedPreferenceRepositoryImpl();
+
   @override
   void initState() {
     super.initState();
@@ -37,7 +39,8 @@ class _QrCodeScanScreenState extends ConsumerState<QrCodeScanScreen> {
     scanController.dispose();
   }
 
-  void _goBackAllGood(BarcodeCapture? result) {
+  // сканирование qr-code
+  void _scanner(BarcodeCapture? result) {
     final barcodes = result?.barcodes.toSet() ?? {};
     if (barcodes.isNotEmpty) {
       final barcode = barcodes.toList()[0];
@@ -62,7 +65,7 @@ class _QrCodeScanScreenState extends ConsumerState<QrCodeScanScreen> {
 
       child: MobileScanner(
         controller: scanController,
-        onDetect: _goBackAllGood,
+        onDetect: _scanner,
         // Область сканирования
         scanWindow: Rect.fromCenter(
           center: Offset(screenWidth(context) / 2, screenHeight(context) / 2),

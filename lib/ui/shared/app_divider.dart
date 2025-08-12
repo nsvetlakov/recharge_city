@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// Общий виджет полосы
 class AppDivider extends StatelessWidget {
+  /// Общий виджет полосы
   const AppDivider({super.key});
 
   @override

@@ -6,7 +6,7 @@ abstract interface class _GenerateAccountClient {
   /// RestClient
   factory _GenerateAccountClient(Dio dio) = __GenerateAccountClient;
 
-  /// 1.1 Get Auth Message
+  /// Запрос на сгенерированный аккаунт
   @GET('/api/v1/auth/apple/generate-account')
   Future<AccountDto> generateAccount();
 }

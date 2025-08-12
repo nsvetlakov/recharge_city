@@ -16,7 +16,9 @@ import 'package:url_launcher/url_launcher.dart';
 
 part 'widgets/_row_block.dart';
 
+/// Экран оплаты
 class PaymentScreen extends ConsumerStatefulWidget {
+  /// Экран оплаты
   const PaymentScreen({super.key});
 
   @override
@@ -25,6 +27,7 @@ class PaymentScreen extends ConsumerStatefulWidget {
 
 class _PaymentScreenState extends ConsumerState<PaymentScreen> {
   final local = SharedPreferenceRepositoryImpl();
+
   String idPowerBank = '';
 
   @override
@@ -33,6 +36,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
     getIdPowerBank();
   }
 
+  /// забираем id power bank
   Future<void> getIdPowerBank() async {
     final id = await local.readIdPowerBank();
     setState(() {
